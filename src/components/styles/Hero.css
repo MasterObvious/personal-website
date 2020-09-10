@@ -1,0 +1,9 @@
+.hero-text {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.hero-container {
+  margin-top: 40pt;
+}
