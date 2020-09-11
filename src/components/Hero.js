@@ -1,17 +1,26 @@
 import React from "react";
 
-import { Flex, Text } from "@chakra-ui/core";
+import { Flex, Text, Heading } from "@chakra-ui/core";
 
 import "./styles/Hero.css";
 
 export default function Hero() {
   return (
-    <Flex className="hero-container" justify="flex-start" w="85%">
+    <Flex
+      className="hero-container"
+      justify="flex-start"
+      w="85%"
+      flexDirection="column"
+    >
+      <Heading as="h1" className="hero-text" size="2xl">
+        I'm Tim Lazarus.
+      </Heading>
       <Text
-        className="hero-text"
-        fontSize={{ base: "4xl", sm: "5xl", md: "6xl" }}
+        as="h2"
+        className="hero-subtext"
+        fontSize={{ base: "2xl", sm: "3xl" }}
       >
-        I'm Tim Lazarus
+        A software engineer.
       </Text>
     </Flex>
   );
