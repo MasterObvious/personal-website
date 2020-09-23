@@ -1,13 +1,13 @@
 import React from "react";
-import { Flex } from "@chakra-ui/core";
-import Header from "../components/Header";
-import Hero from "../components/Hero";
+
+import Header from "../components/Header.js";
+
+import "./styles/Homepage.css";
 
 export default function Homepage() {
   return (
-    <Flex direction="column" align="center" m="0 auto" maxW="1200px">
+    <div className="main-container">
       <Header />
-      <Hero />
-    </Flex>
+    </div>
   );
 }
