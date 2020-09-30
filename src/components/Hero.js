@@ -1,4 +1,5 @@
 import React from "react";
+import Screen from "./Screen";
 
 import macbook from "../images/macbook.png";
 
@@ -14,7 +15,12 @@ export default function Hero() {
         </div>
       </div>
       <div className="hero-image-container">
-        <img className="hero-image" src={macbook} alt="macbook"></img>
+        <div className="hero-image">
+          <img width="100%" src={macbook} alt="macbook"></img>
+          <div className="screen-overlay">
+            <Screen />
+          </div>
+        </div>
       </div>
     </div>
   );
