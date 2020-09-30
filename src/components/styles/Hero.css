@@ -1,24 +1,22 @@
 .hero-container {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  height: 100vh;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .hero-text-container {
   width: 50%;
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 40pt;
+  font-size: 15pt;
   font-weight: 600;
-}
-
-.hero-text-padding {
-  padding-left: 150px;
+  margin-bottom: 20%;
+  text-align: center;
 }
 
 .hero-subtext {
-  font-size: 25pt;
+  font-size: 12pt;
   font-weight: 400;
   color: #747474;
 }
@@ -26,6 +24,7 @@
 .hero-image-container {
   width: 50%;
   max-width: 50%;
+  margin-left: 6%;
 }
 
 .hero-image {
@@ -38,6 +37,87 @@
   position: absolute;
   top: 9%;
   left: 14.5%;
-  bottom: 17%;
+  bottom: 16.5%;
   right: 14.5%;
+}
+
+@media only screen and (min-width: 350px) {
+  .hero-text-container {
+    font-size: 18pt;
+  }
+
+  .hero-subtext {
+    font-size: 14pt;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .hero-text-container {
+    font-size: 20pt;
+  }
+
+  .hero-subtext {
+    font-size: 15pt;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .hero-text-container {
+    font-size: 24pt;
+  }
+
+  .hero-subtext {
+    font-size: 15pt;
+  }
+}
+
+@media only screen and (min-width: 717px) {
+  .hero-container {
+    flex-direction: row;
+  }
+
+  .hero-image-container {
+    margin-left: 0;
+  }
+
+  .hero-text-container {
+    font-size: 30pt;
+    margin-bottom: 0;
+  }
+
+  .hero-subtext {
+    font-size: 20pt;
+  }
+
+  .hero-text-padding {
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (min-width: 925px) {
+  .hero-text-container {
+    font-size: 35pt;
+  }
+
+  .hero-subtext {
+    font-size: 20pt;
+  }
+
+  .hero-text-padding {
+    padding-left: 100px;
+  }
+}
+
+@media only screen and (min-width: 1124px) {
+  .hero-text-container {
+    font-size: 40pt;
+  }
+
+  .hero-subtext {
+    font-size: 25pt;
+  }
+
+  .hero-text-padding {
+    padding-left: 150px;
+  }
 }

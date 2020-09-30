@@ -1,5 +1,6 @@
 import React from "react";
 import Screen from "./Screen";
+import Div100vh from "react-div-100vh";
 
 import macbook from "../images/macbook.png";
 
@@ -7,7 +8,7 @@ import "./styles/Hero.css";
 
 export default function Hero() {
   return (
-    <div className="hero-container">
+    <Div100vh className="hero-container">
       <div className="hero-text-container">
         <div className="hero-text-padding">
           <div>I'm Tim Lazarus.</div>
@@ -22,6 +23,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </Div100vh>
   );
 }
