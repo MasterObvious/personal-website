@@ -71,6 +71,21 @@
   }
 }
 
+@media only screen and (orientation: landscape) {
+  .hero-container {
+    flex-direction: row;
+  }
+
+  .hero-text-container {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .hero-text-padding {
+    padding-left: 7%;
+  }
+}
+
 @media only screen and (min-width: 717px) {
   .hero-container {
     flex-direction: row;
@@ -83,6 +98,7 @@
   .hero-text-container {
     font-size: 30pt;
     margin-bottom: 0;
+    text-align: left;
   }
 
   .hero-subtext {

@@ -1,6 +1,6 @@
 .indicator-container {
   position: absolute;
-  bottom: 80px;
+  bottom: 45px;
 }
 
 .indicator-container span {
@@ -36,4 +36,10 @@
     opacity: 0;
     transform: rotate(45deg) translate(20px, 20px);
   }
-} ;
+}
+
+@media only screen and (min-height: 400px) {
+  .indicator-container {
+    bottom: 80px;
+  }
+}
