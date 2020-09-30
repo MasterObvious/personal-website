@@ -1,4 +1,4 @@
-.headerButton {
+.header-button {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 14pt;
   color: #747474;
@@ -6,10 +6,10 @@
   margin-right: 20px;
 }
 
-.headerButton:visited {
+.header-button:visited {
   color: #747474;
 }
 
-.headerButton:hover {
+.header-button:hover {
   color: #383838;
 }

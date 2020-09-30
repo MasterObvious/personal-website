@@ -1,7 +1,8 @@
 import React from "react";
 
-import Header from "../components/Header.js";
-import Hero from "../components/Hero.js";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import ScrollIndicator from "../components/ScrollIndicator";
 
 import "./styles/Homepage.css";
 
@@ -10,6 +11,8 @@ export default function Homepage() {
     <div className="main-container">
       <Header />
       <Hero />
+      <ScrollIndicator />
+      <div>More content to test</div>
     </div>
   );
 }
