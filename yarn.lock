@@ -1032,6 +1032,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/ibm-plex-sans@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@fontsource/ibm-plex-sans/-/ibm-plex-sans-4.2.2.tgz#0cc4456cfb1b01b5675d6a09fca8a3fbab6bd37e"
+  integrity sha512-RnUdFtHJcWtidq2/MOfqWHUGmMyhUOLJ3CMFL/rFg9tC8QAYthzLSAzwxagaCq31Ej+4HAIS6PDYnaNGC/YhAA==
+
 "@gatsbyjs/reach-router@^1.3.6":
   version "1.3.6"
   resolved "https://registry.yarnpkg.com/@gatsbyjs/reach-router/-/reach-router-1.3.6.tgz#4e8225836959be247890b66f21a3198a0589e34d"
