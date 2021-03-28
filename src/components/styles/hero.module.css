@@ -1,22 +1,25 @@
 .container {
   font-family: "IBM Plex Sans", sans-serif;
   display: flex;
-  align-items: center;
-}
-
-.text-container {
-  min-width: 50%;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .title {
-  font-size: 4em;
+  font-size: 2em;
   font-weight: 600;
 }
 
 .subtitle {
-  font-size: 3em;
+  font-size: 1.5em;
   font-weight: 400;
   color: #747474;
+}
+
+.text-container {
+  min-width: 50%;
+  margin-left: 10%;
+  margin-bottom: 7%;
 }
 
 .code-container::-webkit-scrollbar {
@@ -26,4 +29,41 @@
 .code-container {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+@media only screen and (min-width: 374px) {
+  .title {
+    font-size: 2.5em;
+  }
+
+  .subtitle {
+    font-size: 1.8em;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .title {
+    font-size: 3em;
+  }
+
+  .subtitle {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .title {
+    font-size: 4em;
+  }
+
+  .subtitle {
+    font-size: 3em;
+  }
 }
