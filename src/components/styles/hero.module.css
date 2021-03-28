@@ -1,9 +1,11 @@
 .container {
   font-family: "IBM Plex Sans", sans-serif;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: inherit;
+  align-items: center;
+}
+
+.text-container {
+  min-width: 50%;
 }
 
 .title {
@@ -15,4 +17,17 @@
   font-size: 3em;
   font-weight: 400;
   color: #747474;
+}
+
+.image-container {
+  position: relative;
+}
+
+.screen-overlay {
+  background-color: lawngreen;
+  position: absolute;
+  top: 9%;
+  bottom: 16.5%;
+  left: 14.5%;
+  right: 14.5%;
 }
