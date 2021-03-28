@@ -9,6 +9,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
+    "preload-fonts": "gatsby-preload-fonts",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
@@ -16,6 +17,7 @@
   "dependencies": {
     "@fontsource/ibm-plex-sans": "^4.2.2",
     "gatsby": "^3.1.2",
+    "gatsby-plugin-preload-fonts": "^2.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
