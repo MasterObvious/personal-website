@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .title {
@@ -31,6 +32,16 @@
   scrollbar-width: none;
 }
 
+@media only screen and (orientation: landscape) {
+  .container {
+    flex-direction: row;
+  }
+
+  .text-container {
+    margin-left: 5%;
+  }
+}
+
 @media only screen and (min-width: 374px) {
   .title {
     font-size: 2.5em;
@@ -44,7 +55,6 @@
 @media only screen and (min-width: 750px) {
   .container {
     flex-direction: row;
-    align-items: center;
   }
 }
 
