@@ -1,14 +1,21 @@
 .container {
   font-family: "IBM Plex Sans", sans-serif;
+  min-height: 100vh;
+  height: -moz-available; /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+  height: fill-available;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .title {
-  font-size: 30pt;
+  font-size: 4em;
   font-weight: 600;
 }
 
 .subtitle {
-  font-size: 24pt;
+  font-size: 3em;
   font-weight: 400;
   color: #747474;
 }
