@@ -1,7 +1,7 @@
 import React from "react"
 
-import Hero from "../components/hero"
-import Layout from "../layouts/layout"
+import Hero from "../components/Hero"
+import Layout from "../layouts/Layout"
 
 export default function Home() {
   return (
