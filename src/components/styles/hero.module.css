@@ -18,3 +18,12 @@
   font-weight: 400;
   color: #747474;
 }
+
+.code-container::-webkit-scrollbar {
+  display: none;
+}
+
+.code-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
