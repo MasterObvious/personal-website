@@ -2,7 +2,6 @@ import React from "react"
 import { Helmet } from "react-helmet"
 
 import * as styles from "./styles/layout.module.css"
-import preview from "../images/preview.png"
 
 export default function Layout({ children }) {
   return (
