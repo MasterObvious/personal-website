@@ -7,8 +7,10 @@ import * as styles from "./styles/screen.module.css"
 
 export default function Screen() {
   const codeString = `fn main() {
-    println!("Hello there!");
+  println!("Welcome!");
 }`
+
+  const language = "rust"
 
   const [subIndex, setSubIndex] = useState(0)
   const [showBlink, setShowBlink] = useState(true)
@@ -30,13 +32,22 @@ export default function Screen() {
   }, [codeString, subIndex, showBlink])
 
   return (
-    <SyntaxHighlighter
-      className={styles.highlighter}
-      customStyle={{ margin: 0, height: "100%" }}
-      language="rust"
-      style={vscDarkPlus}
-    >
-      {`${codeString.substring(0, subIndex)}${showBlink ? "|" : " "}`}
-    </SyntaxHighlighter>
+    <div className={styles.container}>
+      <SyntaxHighlighter
+        codeTagProps={{
+          style: {
+            fontSize: "inherit",
+            fontFamily: `Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New"`,
+          },
+          className: "language-" + language,
+        }}
+        className={styles.highlighter}
+        customStyle={{ margin: 0, height: "100%", fontSize: "1em" }}
+        language={language}
+        style={vscDarkPlus}
+      >
+        {`${codeString.substring(0, subIndex)}${showBlink ? "|" : " "}`}
+      </SyntaxHighlighter>
+    </div>
   )
 }
