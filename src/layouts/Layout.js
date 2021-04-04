@@ -2,6 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 
 import * as styles from "./styles/layout.module.css"
+import preview from "../images/preview.png"
 
 export default function Layout({ children }) {
   return (
@@ -25,7 +26,10 @@ export default function Layout({ children }) {
           property="og:description"
           content="This is the personal website of Tim Lazarus, a software engineer at Facebook"
         />
-        <meta property="og:image" content={"preview.png"} />
+        <meta
+          property="og:image"
+          content={"https://timlazarus.com/" + preview}
+        />
 
         {/* Twitter meta tags */}
         <meta property="twitter:card" content="summary_large_image" />
@@ -36,7 +40,10 @@ export default function Layout({ children }) {
           property="twitter:description"
           content="This is the personal website of Tim Lazarus, a software engineer at Facebook"
         />
-        <meta property="twitter:image" content={"preview.png"} />
+        <meta
+          property="twitter:image"
+          content={"https://timlazarus.com/" + preview}
+        />
       </Helmet>
       {children}
     </div>
