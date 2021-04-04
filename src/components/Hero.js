@@ -7,6 +7,10 @@ import Screen from "./Screen"
 import * as styles from "./styles/hero.module.css"
 
 export default function Hero() {
+  const codeString = `fn main() {
+  println!("Welcome!");
+}`
+
   return (
     <ViewportDiv>
       <div className={styles.container}>
@@ -15,7 +19,7 @@ export default function Hero() {
           <h2 className={styles.subtitle}>A software engineer.</h2>
         </div>
         <Macbook>
-          <Screen />
+          <Screen codeString={codeString} language={"rust"} />
         </Macbook>
       </div>
     </ViewportDiv>

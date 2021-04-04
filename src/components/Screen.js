@@ -5,23 +5,21 @@ import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism"
 
 import * as styles from "./styles/screen.module.css"
 
-export default function Screen() {
-  const codeString = `fn main() {
-  println!("Welcome!");
-}`
-
-  const language = "rust"
-
+export default function Screen(props) {
   const [subIndex, setSubIndex] = useState(0)
   const [showBlink, setShowBlink] = useState(true)
 
   useEffect(() => {
     let timeout = null
 
-    if (subIndex === codeString.length) {
-      timeout = setTimeout(() => {
-        setShowBlink(prev => !prev)
-      }, 500)
+    if (subIndex === props.codeString.length) {
+      if (props.preview) {
+        setShowBlink(true)
+      } else {
+        timeout = setTimeout(() => {
+          setShowBlink(prev => !prev)
+        }, 500)
+      }
     } else {
       timeout = setTimeout(() => {
         setSubIndex(prev => prev + 1)
@@ -29,7 +27,15 @@ export default function Screen() {
     }
 
     return () => clearTimeout(timeout)
-  }, [codeString, subIndex, showBlink])
+  }, [props, subIndex, showBlink])
+
+  const previewStyle = props.preview
+    ? {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }
+    : {}
 
   return (
     <div className={styles.container}>
@@ -39,14 +45,19 @@ export default function Screen() {
             fontSize: "inherit",
             fontFamily: `Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New"`,
           },
-          className: "language-" + language,
+          className: "language-" + props.language,
         }}
         className={styles.highlighter}
-        customStyle={{ margin: 0, height: "100%", fontSize: "1em" }}
-        language={language}
+        customStyle={{
+          margin: 0,
+          height: "100%",
+          fontSize: props.preview ? "4.5em" : "1em",
+          ...previewStyle,
+        }}
+        language={props.language}
         style={vscDarkPlus}
       >
-        {`${codeString.substring(0, subIndex)}${showBlink ? "|" : " "}`}
+        {`${props.codeString.substring(0, subIndex)}${showBlink ? "|" : " "}`}
       </SyntaxHighlighter>
     </div>
   )
