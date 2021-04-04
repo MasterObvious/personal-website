@@ -17,7 +17,16 @@
   "dependencies": {
     "@fontsource/ibm-plex-sans": "^4.2.2",
     "gatsby": "^3.1.2",
+    "gatsby-plugin-image": "^1.2.0",
+    "gatsby-plugin-minify": "^0.4.0",
+    "gatsby-plugin-minify-classnames": "^0.2.3",
+    "gatsby-plugin-preact": "^5.2.0",
     "gatsby-plugin-preload-fonts": "^2.1.0",
+    "gatsby-plugin-sharp": "^3.2.0",
+    "gatsby-source-filesystem": "^3.2.0",
+    "gatsby-transformer-sharp": "^3.2.0",
+    "preact": "^10.5.13",
+    "preact-render-to-string": "^5.1.18",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-syntax-highlighter": "^15.4.3"
