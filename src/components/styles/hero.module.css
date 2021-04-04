@@ -7,19 +7,19 @@
 }
 
 .title {
-  font-size: 2em;
+  font-size: 10vw;
   font-weight: 600;
 }
 
 .subtitle {
-  font-size: 1.5em;
+  font-size: 7.5vw;
   font-weight: 400;
   color: #747474;
 }
 
 .text-container {
+  text-align: center;
   min-width: 50%;
-  margin-left: 10%;
   margin-bottom: 7%;
 }
 
@@ -28,52 +28,37 @@
 }
 
 .code-container {
+  font-size: 28px;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
 @media only screen and (orientation: landscape) {
-  .container {
-    flex-direction: row;
-  }
-
   .text-container {
-    margin-left: 5%;
-  }
-}
-
-@media only screen and (min-width: 374px) {
-  .title {
-    font-size: 2.5em;
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 20px;
   }
 
-  .subtitle {
-    font-size: 1.8em;
-  }
-}
-
-@media only screen and (min-width: 750px) {
   .container {
     flex-direction: row;
   }
-}
 
-@media only screen and (min-width: 800px) {
   .title {
-    font-size: 3em;
+    font-size: 6vw;
   }
 
   .subtitle {
-    font-size: 2em;
+    font-size: 4.5vw;
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
   .title {
-    font-size: 4em;
+    font-size: 4.5em;
   }
 
   .subtitle {
-    font-size: 3em;
+    font-size: 3.375em;
   }
 }
