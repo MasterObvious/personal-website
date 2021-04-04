@@ -26,7 +26,7 @@ export default function Layout({ children }) {
           property="og:description"
           content="This is the personal website of Tim Lazarus, a software engineer at Facebook"
         />
-        <meta property="og:image" content={preview} />
+        <meta property="og:image" content={"preview.png"} />
 
         {/* Twitter meta tags */}
         <meta property="twitter:card" content="summary_large_image" />
@@ -37,7 +37,7 @@ export default function Layout({ children }) {
           property="twitter:description"
           content="This is the personal website of Tim Lazarus, a software engineer at Facebook"
         />
-        <meta property="twitter:image" content={preview} />
+        <meta property="twitter:image" content={"preview.png"} />
       </Helmet>
       {children}
     </div>
