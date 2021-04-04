@@ -28,21 +28,21 @@ export default function Layout({ children }) {
         />
         <meta
           property="og:image"
-          content={"https://www.timlazarus.com/" + preview}
+          content={"https://www.timlazarus.com" + preview}
         />
 
         {/* Twitter meta tags */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:site" content="@Master_Obvious" />
-        <meta property="twitter:creator" content="@Master_Obvious" />
-        <meta property="twitter:title" content="Tim Lazarus" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Master_Obvious" />
+        <meta name="twitter:creator" content="@Master_Obvious" />
+        <meta name="twitter:title" content="Tim Lazarus" />
         <meta
-          property="twitter:description"
+          name="twitter:description"
           content="This is the personal website of Tim Lazarus, a software engineer at Facebook"
         />
         <meta
-          property="twitter:image"
-          content={"https://www.timlazarus.com/" + preview}
+          name="twitter:image"
+          content={"https://www.timlazarus.com" + preview + "?x=0"}
         />
       </Helmet>
       {children}
