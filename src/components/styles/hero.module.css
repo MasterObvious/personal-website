@@ -23,16 +23,6 @@
   margin-bottom: 7%;
 }
 
-.code-container::-webkit-scrollbar {
-  display: none;
-}
-
-.code-container {
-  font-size: 28px;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
 @media only screen and (orientation: landscape) {
   .text-container {
     text-align: left;

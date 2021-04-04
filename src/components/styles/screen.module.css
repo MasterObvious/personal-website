@@ -1,0 +1,8 @@
+.highlighter::-webkit-scrollbar {
+  display: none;
+}
+
+.highlighter {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
