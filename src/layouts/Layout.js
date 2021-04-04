@@ -28,7 +28,7 @@ export default function Layout({ children }) {
         />
         <meta
           property="og:image"
-          content={"https://timlazarus.com/" + preview}
+          content={"https://www.timlazarus.com/" + preview}
         />
 
         {/* Twitter meta tags */}
@@ -42,7 +42,7 @@ export default function Layout({ children }) {
         />
         <meta
           property="twitter:image"
-          content={"https://timlazarus.com/" + preview}
+          content={"https://www.timlazarus.com/" + preview}
         />
       </Helmet>
       {children}
