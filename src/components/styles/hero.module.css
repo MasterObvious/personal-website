@@ -1,0 +1,54 @@
+.container {
+  font-family: "IBM Plex Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 10vw;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 7.5vw;
+  font-weight: 400;
+  color: #747474;
+}
+
+.text-container {
+  text-align: center;
+  min-width: 50%;
+  margin-bottom: 7%;
+}
+
+@media only screen and (orientation: landscape) {
+  .text-container {
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .title {
+    font-size: 6vw;
+  }
+
+  .subtitle {
+    font-size: 4.5vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .title {
+    font-size: 4.5em;
+  }
+
+  .subtitle {
+    font-size: 3.375em;
+  }
+}

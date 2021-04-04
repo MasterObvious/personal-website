@@ -1,0 +1,12 @@
+.image-container {
+  position: relative;
+  max-width: 80%;
+}
+
+.screen-overlay {
+  position: absolute;
+  top: 8%;
+  bottom: 16.5%;
+  left: 14.5%;
+  right: 14.5%;
+}
